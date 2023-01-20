@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herbs</title>
+        <link href= "hersbs.css" rel= "stylesheet" type= "text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src= "herbs.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="keywords" content="Herbs, Plants, Health, Recipes">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css" />
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Monoton|Sacramento|Wendy+One" rel="stylesheet">
+    </head>
+<body>
+
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="herbs.html" class="active">Home</a>
+    <a href="aromaherbs.html">Aromatherapy</a>
+    <a href="herbs-subpage.html">Ayurveda</a>
+    <a href="herbsrecipes.html">Nutrition</a>
+    <a href="herbscontact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+
+
+<!--Container =======================================Container-->
+<section>
+  <div class="top-top">
+    <h3>Herbs and Health</h3>
+    <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut</p>
+  </div>
+  <!--=============================================slideer-->
+<div class="slideshow-container">
+
+  <div class="mySlides ">
+    <img src="images/wide-essential-oils.jpg" style="width:100%; height:350px;">
+  </div>
+
+  <div class="mySlides ">
+    <img src="images/aromatherapy (1).jpg" style="width:100%; height:320px;">
+  </div>
+
+  <div class="mySlides ">
+    <img src="images/Aromatherapy+Massage.jpeg" style="width:100%; height:350px;">
+  </div>
+
+  <div class="mySlides ">
+    <img src="images/img3.jpg" style="width:100%; height:350px;">
+  </div>
+<br>
+
+<!--JS======================================-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+   slides[i].style.display="none";
+  }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000);  //Change image every 2 seconds
+}
+</script>
+
+<!--=============================================== top-top-->
+
+<!--=====================================================Text-->
+<div class="top-text">
+  <h3>Some Heading</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra eros velit, in pretium turpis lobortis eu. Suspendisse bibendum semper justo. Etiam a purus ac urna ultricies semper a vitae nunc. Ut molestie ante a massa rhoncus, ut dictum
+    ligula molestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+    egestas, ac vestibulum eros sodales. Vivamus posuere nibh sed justo vulputate, nec maximus nulla lobortis. Suspendisse semper eleifend semper. Aenean tincidunt sem sed felis accumsan, ac varius velit ornare. Maecenas sed dui ullamcorper purus mollis
+    faucibus ac sed ligula. Ut orci erat, pellentesque varius ex vitae, commodo ullamcorper lacus. Phasellus finibus consequat eros. Pellentesque at luctus dolor, sit amet sodales mauris. Morbi vitae dictum ligula. In interdum congue purus aliquam cursus.
+    Phasellus vel porttitor purus. Ut vitae ex eros. Etiam sit amet nisi id nibh pellentesque imperdiet. Vivamus fringilla porta eros. Suspendisse dignissim, arcu quis luctus mollis, tellus diam bibendum elit, a tempor diam leo id sapien.</p>
+</div>
+
+
+<!--=============================================== middle-->
+  <div class="top">
+    <h3>Heading Heading Heading</h3>
+    <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut</p>
+  </div>
+
+<!--=============================================== grid-middle-->
+<div class="grid-container">
+
+<div class="box2">
+  <h5>Aromatherapy</h5>
+  <img src="images/scent-1431053_1280.jpg" class="gridimg" alt="herbs">
+  <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut equidem dolores nec. Soluta scriptorem qui te, eius ignota quo an. Has ut unum deterruisset, ut eum labore fuisset. Cu detracto vivendum has, labitur dignissim dissentiet
+    eos cu. Vis integre conclusionemque ei. Ad eum consul omittantur mediocritatem, at mei alii unum elitr.</p>
+  <a href="aromaherbs.html"><button class="gridbtn">Learn More</button></a>
+</div>
+
+<div class="box3">
+  <h5>Aurveda</h5>
+  <img src="images/ayurveda medicines_0_0_0.jpg" class="gridimg" alt="herbs">
+  <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut equidem dolores nec. Soluta scriptorem qui te, eius ignota quo an. Has ut unum deterruisset, ut eum labore fuisset. Cu detracto vivendum has, labitur dignissim dissentiet
+    eos cu. Vis integre conclusionemque ei. Ad eum consul omittantur mediocritatem, at mei alii unum elitr.</p>
+  <a href="herbs-subpage.html"><button class="gridbtn">Learn More</button></a>
+</div>
+
+
+<div class="box1">
+  <h5>Nutrition</h5>
+  <img src="images/1371730283_lechenie-vetryanki-narodnymi-sredstvami.jpg" class="gridimg" alt="herbs">
+  <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut equidem dolores nec. Soluta scriptorem qui te, eius ignota quo an. Has ut unum deterruisset, ut eum labore fuisset. Cu detracto vivendum has, labitur dignissim dissentiet
+    eos cu. Vis integre conclusionemque ei. Ad eum consul omittantur mediocritatem, at mei alii unum elitr.</p>
+  <a href="herbsrecipes.html"><button class="gridbtn">Learn More</button></a>
+</div>
+
+</div>
+
+  <!--==========-->
+  <div class="benefits">
+    <h3>What are the benefits of Herbs</h3>
+    <p>Lorem ipsum dolor sit amet, ei est veniam munere utroque, eu has tota sale, ut equidem dolores nec.</p>
+  </div>
+
+
+    <div class="beforefooterimg"></div>
+    <div class="textoverimg">
+    <h3>Herbal Benefits</h3>
+    <a href="herbsrecipes.html#linktobenefits"<button class="btn">Explore</button></a>
+    </div>
+
+</section>
+
+    <div class="media">
+      <h2>Connect</h2>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fas fa-at" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+<footer>
+    <div class= "footer-b">
+      <p>Copyright &copy 2020 Natural Healing. Site created by <em>Vika Developer</em></p>
+    </div>
+
+  </footer>
+
+</div>
+
+
+
+
+    </body>
+</html>

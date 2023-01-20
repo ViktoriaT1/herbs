@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrition</title>
+        <link href= "hersbs.css" rel= "stylesheet" type= "text/css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src= "herbs.js"></script>
+        <meta name="keywords" content="Herbs, Plants, Health, Recipes">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Monoton|Sacramento|Wendy+One" rel="stylesheet">
+    </head>
+<body>
+<!--Header ==============================================Header-->
+
+<header>
+  <div class="topnav" id="myTopnav">
+      <a href="herbs.html">Home</a>
+      <a href="aromaherbs.html">Aromatherapy</a>
+      <a href="herbs-subpage.html">Ayurveda</a>
+      <a href="herbsrecipes.html" class="active">Nutrition</a>
+      <a href="herbscontact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+<!--Container================================================Container-->
+<section>
+
+<!--Part One==================-->
+<div class="benefits-top">
+<div class="nutrition1">
+  <h3>Nutrition and Herbs</h3>
+  <p>olestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+  egestas, ac vestibulum</p>
+</div>
+
+<div class="beforethefacts">
+  <h4>The Facts</h4>
+</div>
+
+<div class="facts">
+  <a class="links" onclick="opencontent(event, 'Content1')"><img src="imgs/067737715222673918574.png" alt=""></a>
+  <a class="links" onclick="opencontent(event, 'Content2')"><img src="imgs/logo2.jpg" alt=""></a>
+  <a class="links" onclick="opencontent(event, 'Content3')"><img src="imgs/herbal-logo.png" alt=""></a>
+  <a class="links" onclick="opencontent(event, 'Content4')"><img src="imgs/leaf-transparent-logo-5.png" alt=""></a>
+</div>
+</div>
+
+<div id="Content1" class="content">
+  <p>Some text for Content 1 Some text for Content 1Some text for Content 1Some text for Content 1Some text for Content 1</p>
+</div>
+
+<div id="Content2" class="content">
+  <p>Some text for Content 2 Some text for Content 2Some text for Content 2Some text for Content 2Some text for Content 2</p>
+</div>
+
+<div id="Content3" class="content">
+  <p>Some text for Content 3 Some text for Content 1Some text for Content 3Some text for Content 1Some text for Content 3</p>
+</div>
+
+<div id="Content4" class="content">
+  <p>Some text for Content 4 Some text for Content 4Some text for Content 4Some text for Content 4 Some text for Content 4</p>
+</div>
+
+<script>
+function opencontent(evt, contentName) {
+    var i, content, links;
+    content = document.getElementsByClassName("content");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("links");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(contentName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+<!--Part Two===============-->
+<div class="middle-health">
+  <h3 id="linktobenefits">The Benefits of Herbs</h3>
+
+<div class="Box1">
+
+  <div class="boxA">
+    <img src="images/1371730283_lechenie-vetryanki-narodnymi-sredstvami.jpg" alt="herbs-health">
+  </div>
+    <div class="boxcontentA">
+    <h5>Box A</h5>
+    <p>Box A text---olestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+    egestas, ac vestibulum eros sodales. Vivamus posuere nibh sed justo vulputate, nec maximus nulla lobortis</p>
+    </div>
+
+
+
+  <div class="boxB">
+    <img src="images/aromatherapy-supplies.jpg" alt="">
+  </div>
+    <div class="boxcontentB">
+    <h5>Box B</h5>
+    <p>Box B text ---olestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+    egestas, ac vestibulum eros sodales. Vivamus posuere nibh sed justo vulputate, nec maximus nulla lobortis</p>
+    </div>
+
+
+
+  <div class="boxC">
+    <img src="images/9.jpg" alt="">
+  </div>
+    <div class="boxcontentC">
+    <h5>Box C</h5>
+    <p>Box C text---olestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+    egestas, ac vestibulum eros sodales. Vivamus posuere nibh sed justo vulputate, nec maximus nulla lobortis</p>
+    </div>
+
+
+
+  <div class="boxD">
+    <img src="images/img5.jpg" alt="">
+  </div>
+    <div class="boxcontentD">
+    <h5>Box D</h5>
+    <p>Box D text---olestie. Fusce a velit eget nulla dignissim vestibulum. Quisque imperdiet sit amet tellus vel sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt metus eu lobortis semper. Curabitur scelerisque diam eu augue
+    egestas, ac vestibulum eros sodales. Vivamus posuere nibh sed justo vulputate, nec maximus nulla lobortis</p>
+    </div>
+
+</div>
+
+<!--Part Tree=============-->
+
+<div class="healthyrecipes"></div>
+  <div class="textinsiderecipes">
+    <h4 id="linktoit1">Healthy Recipes</h4>
+  </div>
+
+  <div class="arrow-down">&#10513;</div>
+
+<div class="recipes">
+
+<div class="recipe1">
+<a href="http://www.onegreenplanet.org/vegan-food/herbs-and-spices-recipes/" target="_blank"><img src="images/chickpea-pizza-2.jpg" alt="Chickpea Pizza With Herb Pesto"></a>
+<a href="http://www.onegreenplanet.org/vegan-food/herbs-and-spices-recipes/" target="_blank"><h4 class="rec1">Chickpea Pizza With Herb Pesto</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.seriouseats.com/recipes/2015/06/tabbouleh-salad-recipe.html" target="_blank"><img src="images/image333.jpg" alt="Tabbouleh Salad"></a>
+<a href="https://www.seriouseats.com/recipes/2015/06/tabbouleh-salad-recipe.html" target="_blank"><h4 class="rec1">Tabbouleh Salad</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.seriouseats.com/recipes/2016/03/the-food-lab-vegan-experience-best-homemade-falafel-recipe.html" target="_blank"><img src="images/image444.jpg" alt="Herb-Packed Falafel"></a>
+<a href="https://www.seriouseats.com/recipes/2016/03/the-food-lab-vegan-experience-best-homemade-falafel-recipe.html" target="_blank"><h4 class="rec1">Herb-Packed Falafel</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.seriouseats.com/recipes/2014/10/make-ahead-quinoa-salad-cucumber-tomato-parsley-mint-recipe.html" target="_blank"><img src="images/image555.jpg" alt="Quinoa Salad With Cucumber, Tomato, and Herbs"></a>
+<a href="https://www.seriouseats.com/recipes/2014/10/make-ahead-quinoa-salad-cucumber-tomato-parsley-mint-recipe.html" target="_blank"><h4 class="rec1">Quinoa Salad With Cucumber, Tomato, and Herbs</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.seriouseats.com/2017/07/18-herb-recipes.html" target="_blank"><img src="images/image661.jpg" alt="Fresh Herbs With Corn, Asparagus, and Chickpeas"></a>
+<a href="https://www.seriouseats.com/2017/07/18-herb-recipes.html" target="_blank"><h4 class="rec1">Fresh Herbs With Corn, Asparagus, and Chickpeas</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.seriouseats.com/recipes/2016/07/herb-garden-pesto-vegan-miso-recipe.html" target="_blank"><img src="images/20160623-potluck-dishes-herb-garden-pesto-vicky-wasik-4.jpg" alt="Garden Pesto With Miso and Mixed Herbs"></a>
+<a href="https://www.seriouseats.com/recipes/2016/07/herb-garden-pesto-vegan-miso-recipe.html" target="_blank"><h4 class="rec1">Garden Pesto With Miso and Mixed Herbs</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.101cookbooks.com/archives/green-curry-porridge-recipe.html" target="_blank"><img src="images/green_curry_porridge_recipe.jpg" alt="Green Curry Porridge Recipe"></a>
+<a href="https://www.101cookbooks.com/archives/green-curry-porridge-recipe.html" target="_blank"><h4 class="rec1">Green Curry Porridge Recipe</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="http://www.ahueats.com/2016/03/kuku-sabzi-persian-herb-frittata.html" target="_blank"><img src="images/Kuku-Sabzi-Persian-Herb-Fritatta-1.jpg" alt="Kuku Sabzi"><a href="http://www.ahueats.com/2016/03/kuku-sabzi-persian-herb-frittata.html" target="_blank"></a>
+<a href="http://www.ahueats.com/2016/03/kuku-sabzi-persian-herb-frittata.html" target="_blank"><h4 class="rec1">Kuku Sabzi</h4></a>
+</div>
+
+<div class="recipe1">
+<a href="https://www.101cookbooks.com/vegetarian-paella/" target="_blank"><img src="images/vegetarian-paella-recipe-h.jpg" alt="An Amazing Vegetarian Paella Recipe"></a>
+<a href="https://www.101cookbooks.com/vegetarian-paella/" target="_blank"><h4 class="rec1">An Amazing Vegetarian Paella Recipe</h4></a>
+</div>
+
+</div>
+
+<!--Part Four==============-->
+  <div class="encyimg"></div>
+  <div class="insidetext1">
+  <h3>List of Most Popular Herbs</h3>
+  </div>
+  <div class="insidetext">
+  <a href="aromaherbs.html#linktoit"><button class="ency"><span>Explore</span></button></a>
+  </div>
+</section>
+
+<!--Footer=====================================================Footer-->
+<footer>
+  <div class= "footer-b">
+    <p>Copyright &copy 2020 Natural Healing. Site created by <em>Vika Developer</em></p>
+  </div>
+</footer>
+
+</body>
+</html>

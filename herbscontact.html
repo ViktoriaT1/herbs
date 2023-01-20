@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="hersbs.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <script src="herbs.js"></script>
+    <meta name="keywords" content="Herbs, Plants, Health, Recipes" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Monoton|Sacramento|Wendy+One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header ==============================================Header-->
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="herbs.html">Home</a>
+        <a href="aromaherbs.html">Aromatherapy</a>
+        <a href="herbs-subpage.html">Ayurveda</a>
+        <a href="herbsrecipes.html">Nutrition</a>
+        <a href="herbscontact.html" class="active">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav")
+        if (x.className === "topnav") {
+          x.className += " responsive"
+        } else {
+          x.className = "topnav"
+        }
+      }
+    </script>
+    <div class="contactformimg">
+      <img src="images/333.jpg" alt="contactformimage" />
+    </div>
+    <main class="contactform">
+      <h2>Email Us</h2>
+      <form class="contact-form" action="contactform.php" method="post">
+        <input type="text" name="name" placeholder="Full Name" required /><br />
+        <input
+          type="text"
+          name="mail"
+          placeholder="Your E-mail"
+          required
+        /><br />
+        <input type="text" name="subject" placeholder="Subject" /><br />
+        <textarea name="message" placeholder="Message" required></textarea
+        ><br />
+        <input
+          type="submit"
+          class="submit1"
+          name="Submit"
+          value="Send Message"
+        />
+      </form>
+    </main>
+
+    <footer class="contactformfooter">
+      <div class="footer-contact">
+        <p>
+          Copyright &copy 2020 Natural Healing. Website by
+          <em>Vika Developer</em>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
